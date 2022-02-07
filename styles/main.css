@@ -208,7 +208,7 @@ display: none;
     text-transform: uppercase;
     color: #1B2A49;
     margin: 0;
-
+    margin-bottom: 36px;
 }
 .menu-select {
     border: 1px solid #DEDEDE;
@@ -222,11 +222,14 @@ display: none;
     background-size: 12.79px 7.75px; /*размер стрелки из макета*/
     background-repeat: no-repeat;/*чтобы картинка не мостилась*/
     background-position: 89% center;/*выравниваем положение стрелки*/
+    margin-top: -36px;
 }
 .menu-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);/*3 ячейки в строке*/
-    gap: 20px;
+    gap: 50px 20px;
+    text-align: center;
+    margin-bottom: 100px;
 }
 .menu-grid-cover {
     width: 100%;/*исп 100%, чтобы картинки не перескакивали и подстраивались под 
@@ -234,8 +237,9 @@ display: none;
     height: 430px;
     position: relative;
     overflow: hidden;
+    margin-bottom: 23px;
 }
-.menu-gid-cover img {
+.menu-grid-cover img {
     position: absolute;
     left: 50%;
     top: 50%;
@@ -244,3 +248,60 @@ display: none;
     width: 100%;
     height: 430px;
 }
+.menu-grid-title {
+    font-weight: 600;
+    font-size: 30px;
+    color: #1B2A49;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+.menu-grid-price {
+    font-weight: 700;
+    font-size: 20px;
+    color: #979797;
+    margin-top: 9px;
+    margin-bottom: 22px;
+    text-align: center;
+}
+.menu-grid-btn {
+    background-color: #FBB731;
+    border-radius: 5px;
+    padding: 8px 0;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 9px;
+    }
+.menu-grid-btn:hover {
+        background-color: #F37335;
+        cursor: pointer;
+    }   
+.menu-grid-icon {
+    background-image: url(../image/cart-menu.svg);
+    background-repeat: no-repeat;
+    width: 18px;
+    height: 18px;
+    display: block;
+    }
+.menu-grid-text {
+    width: 152px;   
+    font-family: 'Nunito Sans', sans-serif;
+    color: #1E2F40;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px 0px;
+    margin: -8px;
+    }
+    .menu-title-2 {
+        font-size: 44px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #1B2A49;
+        margin-top: 132px;
+    }
+    
