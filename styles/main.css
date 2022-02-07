@@ -126,7 +126,7 @@ display: none;
 }
 .title {
     font-weight: 700;
-    font-size: 79px;\
+    font-size: 79px;
     margin-top: 17px;
     margin-bottom: 20px;
 }
@@ -144,15 +144,17 @@ display: none;
 .banner-box {
     background-image: url(../image/banner.png);
     background-position: center center;
-    padding: 100px;
+    padding: 100px 100px 105px;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-bottom: 100px;
 }
 .banner-title {
     color: #FFFFFF;
     font-weight: 900;
     font-size: 60px;
-    margin: 0;
+    margin-top: -3px;
+    margin-bottom: 12px;
 }
 .discount {
     font-family: 'Open Sans', sans-serif;
@@ -161,7 +163,7 @@ display: none;
     border-radius: 14px;
     font-weight: 600;
     font-size: 14px;
-    padding: 7px 19px;
+    padding: 7px 17px;
     text-align: center;
     max-width: 60px;
     margin-bottom: 6px;
@@ -179,6 +181,7 @@ display: none;
     margin-left: 1px;
 }
 .banner-link {
+    font-family: 'Nunito Sans', sans-serif;
     display: block;
     text-decoration: none;
     background: #FBB731;
@@ -190,7 +193,54 @@ display: none;
     text-transform: uppercase;
     text-align: center;
     margin-top: 16px;
+    font-size: 14px;
     line-height: 18px;
-    max-width: 150px;
+    max-width: 150px;  
 }
+.menu-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-title {
+    font-size: 44px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #1B2A49;
+    margin: 0;
 
+}
+.menu-select {
+    border: 1px solid #DEDEDE;
+    padding: 13px 30px;
+    border-radius: 22px;
+    color: #443737;
+    font-size: 15px;
+    appearance: none;/*убрали стрелку, чтобы добавить свою*/
+    flex-basis: 279px;
+    background-image: url(../image/arrow.svg);/*ссылка на картинку*/
+    background-size: 12.79px 7.75px; /*размер стрелки из макета*/
+    background-repeat: no-repeat;/*чтобы картинка не мостилась*/
+    background-position: 89% center;/*выравниваем положение стрелки*/
+}
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);/*3 ячейки в строке*/
+    gap: 20px;
+}
+.menu-grid-cover {
+    width: 100%;/*исп 100%, чтобы картинки не перескакивали и подстраивались под 
+экран*/
+    height: 430px;
+    position: relative;
+    overflow: hidden;
+}
+.menu-gid-cover img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); /*чтобы картинка выстраивалась по центру и в полном размере*/
+    object-fit: cover;
+    width: 100%;
+    height: 430px;
+}
