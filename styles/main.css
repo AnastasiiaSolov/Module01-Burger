@@ -7,9 +7,6 @@ body {
     padding-left: 15px;
     padding-right: 15px;
 }
-header {
-border-bottom: 1px solid #dedede;
-}
 .header {
     font-family: 'Open Sans', sans-serif;
     display: flex;
@@ -17,6 +14,13 @@ border-bottom: 1px solid #dedede;
     justify-content: space-between;
     padding-top: 26px;
     padding-bottom: 25px;
+    border-bottom: 1px solid #dedede;
+}
+.header-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-basis: 77%;
 }
 .header-logo {
     display: block;
@@ -188,7 +192,7 @@ display: none;
     color: #1E2F40;
     font-style: normal;
     font-weight: 700;
-    padding: 20px 10px;
+    padding:18px 8px;
     border-radius: 5px;
     text-transform: uppercase;
     text-align: center;
@@ -196,6 +200,11 @@ display: none;
     font-size: 14px;
     line-height: 18px;
     max-width: 150px;  
+    border: 1px solid #FBB731;
+}
+.banner-link:hover {
+    background-color: transparent;
+    color: #FBB731;
 }
 .menu-header {
     display: flex;
@@ -324,7 +333,7 @@ display: none;
     margin-bottom: 21px;
     margin-top: 0;
 }
-.footer-item li {
+.footer-list li {
     margin-bottom: 9px;
     font-family: 'Open sans', sans-serif;
     font-size: 15px;
@@ -332,10 +341,13 @@ display: none;
     font-weight: 700;
     line-height: 24px;
 }
-.footer-item a {
+.footer-list a {
     color: #DEDEDE;
     text-decoration: none;
     font-weight: 400;
+}
+.footer-list a:hover {
+    color: #FBB731;
 }
 .footer-item span {
     color: #DEDEDE;
@@ -343,14 +355,19 @@ display: none;
     font-weight: 400;
     margin-bottom: 2px;
 }
-.footer-tel ul {
+.footer-list-tel {
+    margin-top: 0;
+}
+.footer-list-tel li {
+    margin-bottom: 12px;
+}
+.footer-list-tel a {
     font-size: 20px;
     color: #FBB731;
-    margin-top: 0;
     font-weight: 900;
 }
-.footer-tel li {
-    margin-bottom: 12px;
+.footer-list-tel a:hover {
+    color: #DEDEDE;
 }
 .footer-list {
     padding-left: 0;
