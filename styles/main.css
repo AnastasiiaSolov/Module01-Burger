@@ -151,7 +151,7 @@ display: none;
     padding: 100px 100px 105px;
     background-size: cover;
     background-repeat: no-repeat;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
 }
 .banner-title {
     color: #FFFFFF;
@@ -201,10 +201,14 @@ display: none;
     line-height: 18px;
     max-width: 150px;  
     border: 1px solid #FBB731;
+    transition: 0.2s;
 }
 .banner-link:hover {
     background-color: transparent;
     color: #FBB731;
+}
+.menu {
+    padding-top: 20px;
 }
 .menu-header {
     display: flex;
@@ -373,7 +377,32 @@ display: none;
     padding-left: 0;
     list-style-type: none;
 }
+.button-up {
+background-color: #FBB731;
+color: #1E2F40;
+font-weight: 700;
+font-size: 14px;
+text-transform: uppercase;
+text-decoration: none;
+padding: 5px 20px;
+position: fixed; /*фиксирует кнопку в одном месте, она двигается вместе со скроллингом*/
+bottom: 20px;
+right: 20px;
+border-radius: 5px;
+transition: 1s; /*св-во нужно, чтобы кнопка появлялась не так резко, 1s-интервал*/
+}
+.button-up:hover {
+    background-color: #F37335;
+}
+.button-up.hidden {
+    opacity: 0; /*этот класс скрывает кнопку совсем*/
+}
+.button-up.visible {
+    opacity: 1; /*добавляя этот же класс сюда, сделали кнопку видимой*/
+}
+
 /* Style index*/
+
 .main {
     background: linear-gradient(180deg, #0C4C7B -100%, #1E2F40 100%);
 }
