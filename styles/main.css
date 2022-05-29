@@ -229,7 +229,9 @@ display: none;
     border-radius: 22px;
     color: #443737;
     font-size: 15px;
-    appearance: none;/*убрали стрелку, чтобы добавить свою*/
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;/*убрали стрелку, чтобы добавить свою*/
     flex-basis: 279px;
     background-image: url(../image/arrow.svg);/*ссылка на картинку*/
     background-size: 12.79px 7.75px; /*размер стрелки из макета*/
@@ -257,7 +259,8 @@ display: none;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%); /*чтобы картинка выстраивалась по центру и в полном размере*/
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     height: 430px;
 }
